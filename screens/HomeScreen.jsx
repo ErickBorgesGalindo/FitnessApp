@@ -52,20 +52,20 @@ const HomeScreen = () => {
             text='Learn the Basics of Training'
             subtitle={'06 Workouts for Beginner'}
             ImageSource={require('../images/begginer.jpg')}
-            onPress={() => navigation.navigate('Workout')}
+            onPress={() => navigation.navigate('WorkoutDetail')}
             style={{ marginLeft: 40 }} />
           <CardView
             text='Learn Mixed Martial Arts'
             subtitle={'+6 different disciplines'}
             ImageSource={require('../images/mma.jpg')}
-            onPress={() => navigation.navigate('Workout')}
+            onPress={() => navigation.navigate('WorkoutDetail')}
             style={{ marginLeft: 40 }} />
 
           <CardView
             text='Fitness life'
             subtitle={'Excercises for the day to day'}
             ImageSource={require('../images/everyday.jpg')}
-            onPress={() => navigation.navigate('Workout')}
+            onPress={() => navigation.navigate('WorkoutDetail')}
             style={{ marginLeft: 40 }} />
         </ScrollView>
 
