@@ -15,7 +15,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         marginTop: 25,
-        marginHorizontal:40
+        marginHorizontal: 40
     },
     viewContainer: {
         position: 'absolute',
@@ -24,6 +24,16 @@ export default StyleSheet.create({
         height: 600,
         borderRadius: 25,
         backgroundColor: '#1C1C1E',
+    },
+    tabView: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        backgroundColor: '#2C2C2E',
+        width: '91%',
+        borderRadius: 20,
+        height: 28,
+        marginTop: 40,
     },
 
     // TextStyles
@@ -56,6 +66,14 @@ export default StyleSheet.create({
         marginRight: 30,
         fontSize: 17,
         color: '#fff',
+    },
+    sectionName: {
+        marginTop: 30,
+        alignSelf: 'center',
+        fontSize: 30,
+        fontWeight: '900',
+        color: '#fff',
+        textTransform: 'uppercase'
     },
 
     // componentStyles
