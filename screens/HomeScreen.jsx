@@ -1,9 +1,8 @@
-import { StyleSheet, Text, SafeAreaView, View, ScrollView } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 // Styles
 import Styles from '../components/Styles';
-import { useFonts } from 'expo-font';
 // Components
 import CardView from '../components/CardView';
 import CardViewSquare from '../components/CardViewSquare';
@@ -38,7 +37,7 @@ const HomeScreen = () => {
         {/* workoutCategories */}
         <View style={Styles.infoTextView}>
           <Text style={Styles.text}>Workout Categories</Text>
-          <Text style={Styles.textColor} onPress={() => navigation.navigate('TrainersList')}>See All</Text>
+          <Text style={Styles.textColor} onPress={() => navigation.navigate('WorkoutCategories')}>See All</Text>
         </View>
         {/* categoriesCards */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0, marginRight: 20 }}>
@@ -65,23 +64,24 @@ const HomeScreen = () => {
 
         {/* newWorkouts */}
         <View style={Styles.infoTextView}>
-          <Text style={Styles.text}>New Workouts</Text>
+          <Text style={Styles.text}>Our trainers</Text>
+          <Text style={Styles.textColor} onPress={() => navigation.navigate('TrainersList')}>See All</Text>
         </View>
         {/* newWorkoutsCards */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0, marginRight: 20, marginBottom:40 }}>
           <CardViewSquare
-            text='Submissions'
-            subtitle='03 lessons'
+            text='Richard Will'
+            subtitle='MMA Trainer'
             ImageSource={require('../images/submission.jpg')}
             isPremium={true}
-            onPress={() => navigation.navigate('Workout')} />
+            onPress={() => navigation.navigate('TrainerDetail')} />
 
           <CardViewSquare
-            text='Parkour basics'
-            subtitle='02 lessons'
-            ImageSource={require('../images/parkour.jpg')}
+            text='Jennifer James'
+            subtitle='Crossfit Trainer'
+            ImageSource={require('../images/trainer.jpg')}
             isPremium={false}
-            onPress={() => navigation.navigate('Workout')} />
+            onPress={() => navigation.navigate('TrainerDetail')} />
         </ScrollView>
       </ScrollView>
     </View>
