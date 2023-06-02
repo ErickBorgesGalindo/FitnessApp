@@ -87,7 +87,7 @@ const TrainersReviews = () => {
 
             {/* Button */}
             <View style={{ top: '-45%' }}>
-                <CustomBtn title='Write a Review' onPress={() => console.log('Apachurrao')} />
+                <CustomBtn title='Write a Review' onPress={() => navigation.navigate('WriteReview')} />
             </View>
         </View>
     )

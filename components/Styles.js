@@ -108,6 +108,20 @@ export default StyleSheet.create({
         borderRightColor: '#1C1C1E',
         borderWidth: 1,
     },
+    inputReview: {
+        height: 235,
+        width: 320,
+        alignSelf: 'center',
+        marginBottom: 30,
+        color: 'white',
+        fontSize: 20,
+        borderWidth: 1,
+        borderColor: '#2C2C2E',
+        backgroundColor: '#2C2C2E',
+        borderRadius: 20,
+        padding:20,
+        paddingTop:20
+      },
     cellIcon: {
         width: 54,
         height: 54,
