@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text } from 'react-native';
+import {View, Text } from 'react-native';
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Rating } from 'react-native-ratings';
@@ -60,7 +60,7 @@ const TrainerWriteReview = () => {
 
             {/* backButton */}
             <View>
-                <CustomBtn title={'Send'} onPress={() => navigation.navigate('Appoinment')} />
+                <CustomBtn title={'Send'} onPress={() => navigation.goBack()} />
             </View>
         </View>
     )

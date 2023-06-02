@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, Image, Pressable, Linking, ScrollView } from 'react-native';
+import {View, Text, Image, Pressable, Linking, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 //Styles
@@ -94,7 +94,7 @@ const TrainersDetail = () => {
 
             {/* Button */}
             <View style={{ top: '160%' }}>
-                <CustomBtn title='Book an Appoinment' onPress={() => console.log('Pachurrao')} />
+                <CustomBtn title='Book an Appoinment' onPress={() => navigation.navigate('Appoinment')} />
             </View>
         </View>
     )
