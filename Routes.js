@@ -7,6 +7,7 @@ import WorkoutCategories from './screens/WorkoutCategories';
 import VideoScreen from './screens/VideoScreen';
 import TrainersList from './screens/TrainersList';
 import TrainersDetail from './screens/TrainersDetail';
+import TrainersReviews from './screens/TrainersReviews';
 
 
 const StackNavigator = () => {
@@ -21,6 +22,7 @@ const StackNavigator = () => {
             <Stack.Screen name='Video' component={VideoScreen} options={{ headerShown: false }}/>
             <Stack.Screen name='TrainersList' component={TrainersList} options={{ headerShown: false }}/>
             <Stack.Screen name='TrainerDetail' component={TrainersDetail} options={{ headerShown: false }}/>
+            <Stack.Screen name='TrainerReviews' component={TrainersReviews} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   )

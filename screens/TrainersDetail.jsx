@@ -77,7 +77,7 @@ const TrainersDetail = () => {
                             <Text>174</Text>
                         </View>
                     </View>
-                    <Pressable style={{ marginTop: 30, marginRight: 30 }} onPress={() => console.log('Pucharrado')}>
+                    <Pressable style={{ marginTop: 30, marginRight: 30 }} onPress={() => navigation.navigate('TrainerReviews')}>
                         <Text style={Styles.textColor}>Read all reviews</Text>
                     </Pressable>
                 </View>
@@ -94,7 +94,7 @@ const TrainersDetail = () => {
 
             {/* Button */}
             <View style={{ top: '160%' }}>
-                <CustomBtn title='Book an Appoinment' onPress={() => navigation.navigate('Reviews')} />
+                <CustomBtn title='Book an Appoinment' onPress={() => console.log('Pachurrao')} />
             </View>
         </View>
     )
