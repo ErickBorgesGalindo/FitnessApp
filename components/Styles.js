@@ -35,6 +35,15 @@ export default StyleSheet.create({
         height: 28,
         marginTop: 40,
     },
+    dataView: {
+        height: 100,
+        width: 340,
+        alignSelf: 'center',
+        justifyContent: 'center',
+        borderRadius: 20,
+        marginTop: 20,
+        backgroundColor: '#3A3A3C',
+    },
 
     // TextStyles
     header: {
@@ -57,6 +66,11 @@ export default StyleSheet.create({
         fontSize: 17,
         fontWeight: 300,
         color: '#D0FD3E'
+    },
+    textSmall: {
+        fontSize: 17,
+        fontWeight: 300,
+        color: '#FFF'
     },
 
     description: {
@@ -93,5 +107,23 @@ export default StyleSheet.create({
         borderLeftColor: '#1C1C1E',
         borderRightColor: '#1C1C1E',
         borderWidth: 1,
+    },
+    cellIcon: {
+        width: 54,
+        height: 54,
+        borderRadius: 50,
+        marginTop: 17,
+        marginRight: 40,
+        backgroundColor: '#D0FD3E',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    circleImage: {
+        width: 40,
+        height: 40,
+        borderRadius: 50,
+        position: 'absolute',
+        top: 0,
+        left: 0,
     },
 })
