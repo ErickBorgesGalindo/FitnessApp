@@ -44,7 +44,6 @@ export default StyleSheet.create({
         marginTop: 20,
         backgroundColor: '#3A3A3C',
     },
-
     // TextStyles
     header: {
         fontSize: 50,

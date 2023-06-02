@@ -10,6 +10,7 @@ import TrainersDetail from './screens/TrainersDetail';
 import TrainersReviews from './screens/TrainersReviews';
 import TrainerWriteReview from './screens/TrainerWriteReview';
 import TrainerAppoinment from './screens/TrainerAppoinment';
+import PaymentTime from './screens/PaymentTime';
 
 
 const StackNavigator = () => {
@@ -27,6 +28,7 @@ const StackNavigator = () => {
             <Stack.Screen name='TrainerReviews' component={TrainersReviews} options={{ headerShown: false }}/>
             <Stack.Screen name='WriteReview' component={TrainerWriteReview} options={{ headerShown: false }}/>
             <Stack.Screen name='Appoinment' component={TrainerAppoinment} options={{ headerShown: false }}/>
+            <Stack.Screen name='PaymentTime' component={PaymentTime} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   )

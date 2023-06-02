@@ -74,7 +74,7 @@ const WorkoutDetail = () => {
                         popUpTitle='Upgrade to Premium'
                         popUpSubtitle='Subscribe to take an appoinment'
                         btnTitle='Be Premium'
-                        onPress={() => navigation.navigate('Premium')}
+                        onPress={() => navigation.navigate('PaymentTime')}
                         cancelOnPress={() => navigation.goBack()} />
             }
         </View>
