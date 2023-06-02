@@ -11,26 +11,20 @@ import CardViewSquare from '../components/CardViewSquare';
 const HomeScreen = () => {
   const navigation = useNavigation();
 
-  const [fontsLoaded] = useFonts({
-    'ExtraBold': require('../assets/fonts/Montserrat-ExtraBold.ttf'),
-    'Medium': require('../assets/fonts/Montserrat-Medium.ttf'),
-    'Light': require('../assets/fonts/Montserrat-Light.ttf'),
-  });
-
   return (
     <View style={Styles.container}>
       {/* mainText */}
       <View style={Styles.maintxtView}>
-        <Text style={{ ...Styles.header, fontFamily: 'ExtraBold' }}>Hello User,</Text>
-        <Text style={{ ...Styles.subHeader, fontFamily: 'Light' }}>Good morning.</Text>
+        <Text style={{ ...Styles.header }}>Hello User,</Text>
+        <Text style={{ ...Styles.subHeader }}>Good morning.</Text>
       </View>
 
       {/* content */}
       <ScrollView>
         {/* todayWorkoutPlan */}
         <View style={Styles.infoTextView}>
-          <Text style={{ ...Styles.text, fontFamily: 'Medium' }}>Today Workout Plan</Text>
-          <Text style={{ ...Styles.textColor, fontFamily: 'Medium' }}>Mon 26 Apr</Text>
+          <Text style={{ ...Styles.text }}>Today Workout Plan</Text>
+          <Text style={{ ...Styles.textColor }}>Mon 26 Apr</Text>
         </View>
         {/* excerciseCard */}
         <View style={{ alignItems: 'center' }}>
@@ -44,7 +38,7 @@ const HomeScreen = () => {
         {/* workoutCategories */}
         <View style={Styles.infoTextView}>
           <Text style={Styles.text}>Workout Categories</Text>
-          <Text style={Styles.textColor} onPress={() => navigation.navigate('WorkoutCategories')}>See All</Text>
+          <Text style={Styles.textColor} onPress={() => navigation.navigate('TrainersList')}>See All</Text>
         </View>
         {/* categoriesCards */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0, marginRight: 20 }}>

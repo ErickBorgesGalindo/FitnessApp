@@ -81,4 +81,17 @@ export default StyleSheet.create({
         width: 400,
         height: 300,
     },
+    input: {
+        height: 60,
+        width: 350,
+        alignSelf: 'center',
+        marginBottom: 10,
+        color: 'white',
+        fontSize: 20,
+        borderBottomColor: 'gray',
+        borderTopColor: '#1C1C1E',
+        borderLeftColor: '#1C1C1E',
+        borderRightColor: '#1C1C1E',
+        borderWidth: 1,
+    },
 })
