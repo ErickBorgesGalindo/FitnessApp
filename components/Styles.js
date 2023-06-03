@@ -98,6 +98,17 @@ export default StyleSheet.create({
         color: '#fff',
         textTransform: 'uppercase'
     },
+    cardInfo: {
+        alignItems: 'start',
+        flexDirection: 'col',
+        marginLeft: 20,
+        marginTop: 30
+    },
+    cardInfoTxt: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: 'white',
+    },
 
     // componentStyles
     topImage: {
@@ -128,9 +139,24 @@ export default StyleSheet.create({
         borderColor: '#2C2C2E',
         backgroundColor: '#2C2C2E',
         borderRadius: 20,
-        padding:20,
-        paddingTop:20
-      },
+        padding: 20,
+        paddingTop: 20
+    },
+    inputExpires: {
+        height: 60,
+        width: 150,
+        alignSelf: 'center',
+        alignContent: 'space-between',
+        marginLeft: 20,
+        marginBottom: 30,
+        color: 'white',
+        fontSize: 20,
+        borderBottomColor: 'gray',
+        borderTopColor: '#1C1C1E',
+        borderLeftColor: '#1C1C1E',
+        borderRightColor: '#1C1C1E',
+        borderWidth: 1,
+    },
     cellIcon: {
         width: 54,
         height: 54,
@@ -154,5 +180,18 @@ export default StyleSheet.create({
         width: 60,
         marginLeft: 20,
         borderRadius: 50
-    }
+    },
+    card: {
+        height: 176,
+        width: 327,
+        marginTop: 30,
+        alignSelf: "center",
+    },
+    cardLogo: {
+        width: 80,
+        height: 80,
+        marginRight: 30,
+        resizeMode: 'contain',
+        alignSelf: 'flex-end',
+    },
 })

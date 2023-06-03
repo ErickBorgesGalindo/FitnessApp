@@ -10,15 +10,10 @@ const CardPreview = ({ backgroundImage, logoImage, numberText, selected, onPress
                 <View style={styles.info}>
                     <Text style={styles.infoTxt}>●●●●</Text>
                     <Text style={styles.infoTxt}>{numberText}</Text>
-                    {/* {isCardPresed ?
-                        <FontAwesome name="check-square" size={30} color="rgba(208,253,62,.9)" /> :
-                        <View style={styles.disableCard} />
-                    } */}
-                    {selected ? (
-                        <FontAwesome name="check-square" size={30} color="rgba(208,253,62,.9)" />
-                    ) : (
-                        <View style={styles.disableCard} />
-                    )}
+                    {selected ?
+                        <FontAwesome name="check-square" size={33} color="rgba(208,253,62,.9)" /> :
+                        <FontAwesome name="check-square" size={33} color="rgba(255,255,255,0.4)" />
+                    }
                 </View>
             </Pressable>
         </ImageBackground>

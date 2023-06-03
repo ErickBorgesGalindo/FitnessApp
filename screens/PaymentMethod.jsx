@@ -28,7 +28,7 @@ const PaymentMethod = () => {
             <View style={{ marginTop: 7, height: 200 }}>
                 <ScrollView horizontal style={{ width: '100%', height: '10%' }} showsHorizontalScrollIndicator={false} >
                     {/* Add new card */}
-                    <Pressable style={Styles.addCardView} onPress={() => navigation.navigate("DataCard")}>
+                    <Pressable style={Styles.addCardView} onPress={() => navigation.navigate("PaymentCardDetail")}>
                         <Entypo name="plus" size={24} color="white" alignSelf='center' />
                     </Pressable>
                     {/* Cards */}
