@@ -44,6 +44,16 @@ export default StyleSheet.create({
         marginTop: 20,
         backgroundColor: '#3A3A3C',
     },
+    addCardView: {
+        justifyContent: 'center',
+        height: 130,
+        width: 80,
+        marginTop: 20,
+        marginLeft: 10,
+        marginRight: 20,
+        borderRadius: 20,
+        backgroundColor: '#2C2C2E',
+    },
     // TextStyles
     header: {
         fontSize: 50,
@@ -139,4 +149,10 @@ export default StyleSheet.create({
         top: 0,
         left: 0,
     },
+    circleTrainerimage: {
+        height: 60,
+        width: 60,
+        marginLeft: 20,
+        borderRadius: 50
+    }
 })

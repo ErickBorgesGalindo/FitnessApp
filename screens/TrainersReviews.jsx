@@ -43,9 +43,9 @@ const TrainersReviews = () => {
 
             {/* TabView */}
             <View style={Styles.tabView}>
-                <TabBar onPress={handleRecentPress} isSelected={isRecentPressed} label='Recent' />
-                <TabBar onPress={handleCriticalPress} isSelected={isCriticalPressed} label='Critical' />
-                <TabBar onPress={handleFavourablePress} isSelected={isFavourablePressed} label='Favourable' />
+                <TabBar onPress={handleRecentPress} isSelected={isRecentPressed} label={'Recent'} />
+                <TabBar onPress={handleCriticalPress} isSelected={isCriticalPressed} label={'Critical' }/>
+                <TabBar onPress={handleFavourablePress} isSelected={isFavourablePressed} label={'Favourable'} />
             </View>
 
             {/* ProgressBar */}

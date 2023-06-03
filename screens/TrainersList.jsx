@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Styles from '../components/Styles';
 //Components
 import BackBtn from '../components/BackBtn';
-import TrainerCard from '../components/TrainerCard';
+import TrainerCard from '../components/CardTrainer';
 
 const TrainersList = () => {
     const navigation = useNavigation();

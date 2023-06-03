@@ -7,7 +7,7 @@ import { useFonts } from 'expo-font';
 // Components
 import BackBtn from '../components/BackBtn';
 import TimeCaloriesView from '../components/TimeCaloriesView';
-import FlatCard from '../components/FlatCard';
+import FlatCard from '../components/CardFlat';
 import PopUpView from '../components/PopUpView';
 
 const WorkoutDetail = () => {

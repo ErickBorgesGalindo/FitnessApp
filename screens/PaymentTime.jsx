@@ -30,7 +30,7 @@ const PaymentTime = () => {
         <View >
             {/* topImage and backBtn */}
             <Image style={styles.Img} source={require('../images/bepremium.jpg')} />
-            <BackBtn onPress={() => navigation.goBack()} />
+            <BackBtn style={{top:'10%'}} onPress={() => navigation.goBack()} />
 
             {/* textView */}
             <View style={styles.TxtView}>
@@ -64,7 +64,7 @@ const PaymentTime = () => {
             <View style={{ top: '40%' }}>
                 <CustomBtn
                     title='Subscribe Now'
-                    onPress={() => navigation.navigate('Method')} />
+                    onPress={() => navigation.navigate('PaymentMethod')} />
             </View>
         </View>
     )

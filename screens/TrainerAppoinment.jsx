@@ -7,7 +7,7 @@ import Styles from '../components/Styles';
 import { AntDesign } from '@expo/vector-icons';
 //Components
 import BackBtn from '../components/BackBtn';
-import TrainerCard from '../components/TrainerCard';
+import TrainerCard from '../components/CardTrainer';
 import CustomBtn from '../components/CustomBtn';
 import TimeBtn from '../components/CustomTimeBtn';
 
