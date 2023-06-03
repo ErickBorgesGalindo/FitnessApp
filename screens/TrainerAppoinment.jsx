@@ -105,7 +105,7 @@ const TrainerAppoinment = () => {
 
             {/* customBtn*/}
             <View style={{ marginTop: 40 }}>
-                <CustomBtn title={'Next'} onPress={() => console.log('Pachurrao')} />
+                <CustomBtn title={'Next'} onPress={() => navigation.navigate('PaymentTime')} />
             </View>
         </View>
     )

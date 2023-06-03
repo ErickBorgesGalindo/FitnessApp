@@ -5,6 +5,20 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: '#1C1C1E',
     },
+    viewContainer: {
+        position: 'absolute',
+        top: '93%',
+        width: '100%',
+        height: 600,
+        borderRadius: 25,
+        backgroundColor: '#1C1C1E',
+    },
+    completeContainer: {
+        flex: 1,
+        backgroundColor: '#1C1C1E',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     maintxtView: {
         paddingTop: 40,
         paddingLeft: 40,
@@ -16,14 +30,6 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         marginTop: 25,
         marginHorizontal: 40
-    },
-    viewContainer: {
-        position: 'absolute',
-        top: '93%',
-        width: '100%',
-        height: 600,
-        borderRadius: 25,
-        backgroundColor: '#1C1C1E',
     },
     tabView: {
         flexDirection: 'row',
@@ -54,6 +60,19 @@ export default StyleSheet.create({
         borderRadius: 20,
         backgroundColor: '#2C2C2E',
     },
+    completeContainer: {
+        flex: 1,
+        backgroundColor: '#1C1C1E',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    popUpView: {
+        height: 300,
+        width: 300,
+        marginTop: 50,
+        borderRadius: 30,
+        backgroundColor: '#2C2C2E'
+    },
     // TextStyles
     header: {
         fontSize: 50,
@@ -70,7 +89,6 @@ export default StyleSheet.create({
         fontWeight: 500,
         color: '#fff'
     },
-
     textColor: {
         fontSize: 17,
         fontWeight: 300,
@@ -81,7 +99,12 @@ export default StyleSheet.create({
         fontWeight: 300,
         color: '#FFF'
     },
-
+    textPopUp: {
+        marginLeft: 15,
+        fontSize: 25,
+        fontWeight: '600',
+        color: 'white'
+    },
     description: {
         textAlign: 'justify',
         marginTop: 20,
@@ -193,5 +216,15 @@ export default StyleSheet.create({
         marginRight: 30,
         resizeMode: 'contain',
         alignSelf: 'flex-end',
+    },
+    popUpButton: {
+        position: 'absolute',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        top: '100%',
+        width: 200,
+        height: 45,
+        borderRadius: 20,
+        backgroundColor: '#D0FD3E',
     },
 })

@@ -13,6 +13,7 @@ import TrainerAppoinment from './screens/TrainerAppoinment';
 import PaymentTime from './screens/PaymentTime';
 import PaymentMethod from './screens/PaymentMethod';
 import PaymentCardDetail from './screens/PaymentCardDetail';
+import PaymentComplete from './screens/PaymentComplete';
 
 
 const StackNavigator = () => {
@@ -33,6 +34,7 @@ const StackNavigator = () => {
             <Stack.Screen name='PaymentTime' component={PaymentTime} options={{ headerShown: false }}/>
             <Stack.Screen name='PaymentMethod' component={PaymentMethod} options={{ headerShown: false }}/>
             <Stack.Screen name='PaymentCardDetail' component={PaymentCardDetail} options={{ headerShown: false }}/>
+            <Stack.Screen name='PaymentComplete' component={PaymentComplete} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   )

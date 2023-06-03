@@ -31,7 +31,7 @@ const HomeScreen = () => {
             text='Day 01 - Warm Up'
             subtitle={'07:00 - 08:00 AM'}
             ImageSource={require('../images/00_image.jpg')}
-            onPress={() => navigation.navigate('Workout')} />
+            onPress={() => navigation.navigate('WorkoutDetail')} />
         </View>
 
         {/* workoutCategories */}

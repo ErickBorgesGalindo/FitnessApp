@@ -94,7 +94,7 @@ const PaymentMethod = () => {
 
             {/* customBtn */}
             <View style={{ marginTop: 40 }}>
-                <CustomBtn title='Confirm' onPress={() => navigation.navigate("Completed")} />
+                <CustomBtn title='Confirm' onPress={() => navigation.navigate("PaymentComplete")} />
             </View>
         </View>
     )
