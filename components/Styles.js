@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 export default StyleSheet.create({
-    // ViewStyles
+    // ------ViewStyles------
     container: {
         flex: 1,
         backgroundColor: '#1C1C1E',
@@ -13,6 +13,14 @@ export default StyleSheet.create({
         borderRadius: 25,
         backgroundColor: '#1C1C1E',
     },
+    slashView: {
+        position: 'absolute',
+        top: '80%',
+        width: '100%',
+        height: 600,
+        backgroundColor: '#1C1C1E',
+        transform: [{ skewY: '-10deg' }],
+      },
     completeContainer: {
         flex: 1,
         backgroundColor: '#1C1C1E',
@@ -73,7 +81,7 @@ export default StyleSheet.create({
         borderRadius: 30,
         backgroundColor: '#2C2C2E'
     },
-    // TextStyles
+    // ------TextStyles------
     header: {
         fontSize: 50,
         fontWeight: 800,
@@ -132,12 +140,21 @@ export default StyleSheet.create({
         fontSize: 20,
         color: 'white',
     },
+    slashTxt: {
+        position: 'absolute',
+        top: '60%',
+        marginLeft: 40
+      },
 
-    // componentStyles
+    // ------componentStyles------
     topImage: {
         width: 400,
         height: 300,
     },
+    slashImage: {
+        width: 400,
+        height: 550,
+      },
     input: {
         height: 60,
         width: 350,

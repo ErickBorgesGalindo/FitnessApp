@@ -1,17 +1,20 @@
 import React from 'react';
-import { TextInput } from 'react-native';
+import { TextInput,View, Pressable } from 'react-native';
+import { Entypo } from '@expo/vector-icons';
+
 
 class MaskedInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       maskedValue: '',
+      passwordVisible: false,
     };
   }
 
   handleTextChange = (text) => {
     const { mask, onValueChange } = this.props;
-    
+
     // Aquí implementa la lógica de la máscara según el tipo de input.
     // Puedes usar switch-case, un objeto de mapeo o cualquier enfoque que prefieras.
 
@@ -36,13 +39,19 @@ class MaskedInput extends React.Component {
       case 'review':
         formattedText = this.formatReview(text)
         break;
+      case 'email':
+        formattedText = this.formatEmail(text)
+        break;
+      case 'password':
+        formattedText = this.formatPassword(text)
+        break;
       // Agrega más casos según tus necesidades
       default:
         break;
     };
 
     if (onValueChange) {
-        onValueChange(formattedText);
+      onValueChange(formattedText);
     };
 
     this.setState({ maskedValue: formattedText });
@@ -69,7 +78,7 @@ class MaskedInput extends React.Component {
 
     return formattedText;
   };
-  
+
   formatExpiry = (text) => {
     // Lógica de la máscara para fecha de vencimiento (MM/YY)
     const formattedText = text
@@ -91,18 +100,45 @@ class MaskedInput extends React.Component {
     // Lógica de la máscara para el campo de review
     // Por ejemplo, puedes limitar la longitud máxima del texto a 100 caracteres
     const formattedText = text.slice(0, 300);
-  
+
     return formattedText;
   };
 
+  formatEmail = (text) => {
+    return text.toLowerCase();
+  };
+
+  formatPassword = (text) => {
+    return text;
+  };
+
+  togglePasswordVisibility = () => {
+    this.setState((prevState) => ({
+      passwordVisible: !prevState.passwordVisible,
+    }));
+  };
+
   render() {
+
+    const { passwordVisible } = this.state;
+    const { mask } = this.props;
+    const isReviewMask = mask === 'review';
+
     return (
-      <TextInput
-        {...this.props}
-       value={this.state.maskedValue}
-        onChangeText={this.handleTextChange}
-        multiline={true}
-      />
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <TextInput
+          {...this.props}
+          value={this.state.maskedValue}
+          onChangeText={this.handleTextChange}
+          multiline={isReviewMask}
+          secureTextEntry={!passwordVisible}
+        />
+        {this.props.mask === 'password' && (
+          <Pressable onPress={this.togglePasswordVisibility} style={{position:'absolute', top:'30%', left:'90%'}}>
+            <Entypo name={passwordVisible ? "eye" : "eye-with-line"} size={24} color="white" />
+          </Pressable>
+        )}
+      </View>
     );
   }
 }

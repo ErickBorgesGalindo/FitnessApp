@@ -49,7 +49,7 @@ const TrainerWriteReview = () => {
             </View>
 
             {/* maskedReview */}
-            <View style={{ marginTop: 30 }}>
+            <View style={{ marginTop: 30, alignItems:'center'}}>
                 <MaskedInput
                     style={Styles.inputReview}
                     value={review}

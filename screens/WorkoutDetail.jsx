@@ -3,7 +3,6 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 // Styles
 import Styles from '../components/Styles';
-import { useFonts } from 'expo-font';
 // Components
 import BackBtn from '../components/BackBtn';
 import TimeCaloriesView from '../components/TimeCaloriesView';
