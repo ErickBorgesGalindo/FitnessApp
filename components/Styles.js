@@ -187,7 +187,7 @@ export default StyleSheet.create({
         width: 150,
         alignSelf: 'center',
         alignContent: 'space-between',
-        marginLeft: 20,
+        marginHorizontal:5,
         marginBottom: 30,
         color: 'white',
         fontSize: 20,

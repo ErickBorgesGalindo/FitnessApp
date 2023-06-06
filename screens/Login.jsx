@@ -68,7 +68,8 @@ const Login = () => {
                     onValueChange={null}
                     placeholder='Password'
                     placeholderTextColor='white'
-                    mask='password' />
+                    mask='password'
+                    secureTextEntry={true} />
             </View>
 
             {/* forgotPassword */}

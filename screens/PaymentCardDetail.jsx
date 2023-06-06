@@ -53,7 +53,7 @@ const PaymentCardDetail = () => {
             </ImageBackground>
 
             {/* Input */}
-            <View style={{ marginTop: 20 }}>
+            <View style={{ marginTop: 20, alignSelf:'center' }}>
                 <MaskedInput
                     style={Styles.input}
                     value={textName}
