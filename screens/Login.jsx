@@ -74,7 +74,7 @@ const Login = () => {
 
             {/* forgotPassword */}
             <View style={{ position: 'absolute', top: '125%', alignSelf: 'flex-end', right: '05%' }}>
-                <Pressable onPress={() => console.log('Pachurrao')}>
+                <Pressable onPress={() => navigation.navigate("ForgotPassword")}>
                     <Text style={{ color: '#D0FD3E', fontSize: 15, fontWeight: '600' }}>Forgot Password</Text>
                 </Pressable>
             </View>

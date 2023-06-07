@@ -15,6 +15,8 @@ import PaymentMethod from './screens/PaymentMethod';
 import PaymentCardDetail from './screens/PaymentCardDetail';
 import PaymentComplete from './screens/PaymentComplete';
 import Login from './screens/Login';
+import LoginForgotPassowrd from './screens/LoginForgotPassword';
+import LoginVerification from './screens/LoginVerification';
 
 
 const StackNavigator = () => {
@@ -24,6 +26,8 @@ const StackNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
+        <Stack.Screen name='ForgotPassword' component={LoginForgotPassowrd} options={{ headerShown: false }} />
+        <Stack.Screen name='Verification' component={LoginVerification} options={{ headerShown: false }} />
         <Stack.Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name='WorkoutDetail' component={WorkoutDetail} options={{ headerShown: false }} />
         <Stack.Screen name='WorkoutCategories' component={WorkoutCategories} options={{ headerShown: false }} />
