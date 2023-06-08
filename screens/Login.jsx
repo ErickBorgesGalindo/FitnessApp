@@ -172,7 +172,7 @@ const Login = () => {
 
                     {/* loginBtn */}
                     <View style={{ position: 'absolute', top: '140%', flexDirection: 'row', alignSelf: 'flex-end', justifyContent: 'space-between', right: '05%', width: '35%' }}>
-                        <CustomBtn title='Sign Up' style={{ width: '100%' }} onPress={() => navigation.navigate("Home")} />
+                        <CustomBtn title='Sign Up' style={{ width: '100%' }} onPress={() => navigation.navigate("Gender")} />
                     </View>
 
                 </View>
