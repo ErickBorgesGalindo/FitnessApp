@@ -124,6 +124,10 @@ class MaskedInput extends React.Component {
     const { mask, secureTextEntry } = this.props;
     const isReviewMask = mask === 'review';
 
+    const entypoStyle = {
+      top:'0%'
+    };
+
     return (
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <TextInput
@@ -134,7 +138,7 @@ class MaskedInput extends React.Component {
           secureTextEntry={secureTextEntry && !passwordVisible}
         />
         {this.props.mask === 'password' && secureTextEntry && (
-          <Pressable onPress={this.togglePasswordVisibility} style={{position:'absolute', top:'30%', left:'90%'}}>
+          <Pressable onPress={this.togglePasswordVisibility} style={{...this.props.entypoStyle, left:'-40%'}}>
             <Entypo name={passwordVisible ? "eye" : "eye-with-line"} size={24} color="white" />
           </Pressable>
         )}
