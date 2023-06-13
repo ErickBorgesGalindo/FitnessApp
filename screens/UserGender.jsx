@@ -1,5 +1,6 @@
 import { View, Text} from 'react-native';
 import React, {useState} from 'react';
+import { useNavigation } from '@react-navigation/native';
 //Styles
 import Styles from '../components/Styles';
 //Components
@@ -7,6 +8,7 @@ import CustomBtn from '../components/CustomBtn';
 import Gender from '../components/CustomGenderBtn';
 
 const UserGender = () => {
+    const navigation = useNavigation();
     const [isMalePressed, setIsMalePressed] = useState(false);
     const [isFemalePressed, setIsFemalePressed] = useState(false);
 
@@ -50,7 +52,7 @@ const UserGender = () => {
 
             {/* nextBtn */}
             <View style={{marginRight:20, marginTop:'30%'}}>
-                <CustomBtn title='Next' style={{ width:'40%', alignSelf:'flex-end'}} onPress={() => navigation.navigate("Gender")}/>
+                <CustomBtn title='Next' style={{ width:'30%', alignSelf:'flex-end'}} onPress={() => navigation.navigate("Age")}/>
             </View>
         </View>
     )
