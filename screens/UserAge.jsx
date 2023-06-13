@@ -26,7 +26,7 @@ const UserAge = () => {
                 <Text style={{ ...Styles.text, fontSize: 13, textAlign: 'center', fontWeight: '600', textTransform: 'uppercase' }}>This helps us create your personalized plan</Text>
             </View>
 
-            {/* genderSelector */}
+            {/* ageSelector */}
             <View style={{ marginTop: '10%', alignSelf: 'center', top: '10%' }}>
                 <WheelPicker items={data} onIndexChange={handleValueChange} itemHeight={50} />
             </View>
@@ -34,7 +34,7 @@ const UserAge = () => {
             {/* customBtn, backBtn */}
             <View style={{ marginRight: 20, marginTop: '30%' }}>
                 <BackBtn onPress={() => navigation.goBack()} />
-                <CustomBtn title='Next' style={{ width: '30%', alignSelf: 'flex-end' }} onPress={() => console.log('Pachurradito')} />
+                <CustomBtn title='Next' style={{ width: '30%', alignSelf: 'flex-end' }} onPress={() => navigation.navigate('Weight')} />
             </View>
         </View>
     )
