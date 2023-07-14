@@ -20,6 +20,7 @@ import LoginVerification from './screens/LoginVerification';
 import UserGender from './screens/UserGender';
 import UserAge from './screens/UserAge';
 import UserWeight from './screens/UserWeight';
+import UserGoal from './screens/UserGoal';
 
 
 const StackNavigator = () => {
@@ -34,6 +35,7 @@ const StackNavigator = () => {
         <Stack.Screen name='Gender' component={UserGender} options={{ headerShown: false }} />
         <Stack.Screen name='Age' component={UserAge} options={{ headerShown: false }} />
         <Stack.Screen name='Weight' component={UserWeight} options={{ headerShown: false }} />
+        <Stack.Screen name='Goal' component={UserGoal} options={{ headerShown: false }} />
         <Stack.Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name='WorkoutDetail' component={WorkoutDetail} options={{ headerShown: false }} />
         <Stack.Screen name='WorkoutCategories' component={WorkoutCategories} options={{ headerShown: false }} />
